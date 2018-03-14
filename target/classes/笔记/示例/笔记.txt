@@ -1,0 +1,15 @@
+    /**
+     *作用域:web会话域
+     */
+    @Component
+    @Scope(
+        value = WebApplicationContext.SCOPE_SESSION,
+            proxyMode = ScopedProxyMode.INTERFACES
+    )
+
+    javaConfig中
+        @Bean
+        @Scope(
+            value = WebApplicationContext.SCOPE_SESSION,
+                proxyMode = ScopedProxyMode.INTERFACES
+        )
